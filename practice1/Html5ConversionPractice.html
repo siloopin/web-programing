@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News Website</title>
+    <style>
+        #header, #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        #mainContent {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        #sidebar, #content {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>Daily News</h1>
+        <nav id="navigation">
+            <a href="#">Home</a> | <a href="#">World</a> | <a href="#">Sports</a> | <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main id="mainContent">
+        <aside id="sidebar">
+            <section id="relatedLinks">
+                <h2>Related Links</h2>
+                <ul>
+                    <li><a href="#">Politics</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Health</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <article id="content">
+            <section id="newsArticle">
+                <h2>Breaking News: Technology Advances</h2>
+                <p>The world of technology is evolving rapidly with new innovations every day...</p>
+            </section>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2025 Daily News. All rights reserved.</p>
+    </footer>
+</body>
+</html>
