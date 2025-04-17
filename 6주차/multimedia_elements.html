@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <title>Multimedia Elements</title>
+</head>
+<body>
+
+    <h2>🎧 Audio Player</h2>
+
+    <audio id="myAudio" controls>
+        <source src="sample.mp3" type="audio/mpeg">
+        <source src="sample.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>
+        Current Time: <span id="currentTime">0</span>s /
+        Duration: <span id="duration">0</span>s
+    </p>
+
+    <hr>
+
+    <h2>🎬 Video Player</h2>
+
+    <video width="480" controls autoplay muted poster="poster.jpg">
+        <source src="sample.mp4" type="video/mp4">
+        <source src="sample.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        const audio = document.getElementById('myAudio');
+        const currentTimeSpan = document.getElementById('currentTime');
+        const durationSpan = document.getElementById('duration');
+
+        audio.addEventListener('loadedmetadata', () => {
+        durationSpan.textContent = Math.floor(audio.duration);
+        });
+
+        audio.addEventListener('timeupdate', () => {
+        currentTimeSpan.textContent = Math.floor(audio.currentTime);
+        });
+    </script>
+
+</body>
+</html>
