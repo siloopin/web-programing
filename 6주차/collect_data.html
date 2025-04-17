@@ -10,7 +10,19 @@
     <form>
         <fieldset>
             <legend>Personal Information</legend>
+            <!-- 
+                label은 인풋의 설명을 해주는 역할을 함. 그리고 for 속성으로 인풋과 연결해줌
+                type은 인풋의 타입을 정해주는 것임
+                type="text" : 일반 텍스트 입력
+                type="email" : 이메일 입력
+                type="password" : 비밀번호 입력
+                type="radio" : 선택형 버튼
+                type="checkbox" : 체크박스
 
+                select : 드롭다운 목록 구성 리스트
+                
+                보통 label은 input 앞에 쓰는 경우가 많지만, radio 버튼이나 checkbox처럼 선택지를 여러 개 보여줘야 할 때는 뒤에 쓰는 게 더 자연스럽고 직관적이에요.
+            -->
             <!-- Full Name -->
             <label for="fullname">Full Name:</label>
             <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
