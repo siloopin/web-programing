@@ -1,4 +1,27 @@
+html{
+
+}
 body{
-    font: optional;
-    background-color: rgb(rgb(195, 108, 108), green, blue);
+    font-family: Helvetica;
+}
+main{
+
+}
+p{
+
+}
+h1{
+background-color: aliceblue;
+}
+li{
+
+}
+header{
+
+}
+nav{
+
+}
+section{
+    
 }
